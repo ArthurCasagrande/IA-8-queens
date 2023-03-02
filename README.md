@@ -1,6 +1,8 @@
 # Membros do grupo
 Arthur Casagrande Paixão - 00288561 - Turma B
+
 Bruno Almeida da Silveira - 00323753 - Turma B
+
 Matheus Diniz Gonçalves da Silva - 00318513 - Turma B
 
 
