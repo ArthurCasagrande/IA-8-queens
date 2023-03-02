@@ -1,5 +1,13 @@
 # IA-8-queens
-Implementação de algoritmo genético para resolução do puzzle 8 queens
+
+Parâmetros utilizados:
+g = 100
+n = 64
+k = 16
+m = 0.4
+e = 2
+
+Essa configuração encontra a solução ideal em aproximadamente 54% das execuções. Nas demais execuções ela encontra soluções que ainda contém 1 conflito.
 
 
 # Alegrete
