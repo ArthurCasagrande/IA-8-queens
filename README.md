@@ -16,7 +16,7 @@ m = 0.4;
 e = 2;
 
 Essa configuração encontra a solução ideal em aproximadamente 54% das execuções. Nas demais ela encontra soluções que ainda contém 1 conflito.
-Para visualizar a solução encontrada pelo algoritmo, basta executar o arquivo eight_queens.py
+Para visualizar a solução encontrada pelo algoritmo, basta executar o arquivo eight_queens.py. É necessário ter a biblioteca matplotlib instalada.
 
 
 # Alegrete
