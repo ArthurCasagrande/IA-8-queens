@@ -1,3 +1,9 @@
+# Membros do grupo
+Arthur Casagrande Paixão - 00288561 - Turma B
+Bruno Almeida da Silveira - 00323753 - Turma B
+Matheus Diniz Gonçalves da Silva - 00318513 - Turma B
+
+
 # IA-8-queens
 
 Parâmetros utilizados:
@@ -7,7 +13,8 @@ k = 16;
 m = 0.4;
 e = 2
 
-Essa configuração encontra a solução ideal em aproximadamente 54% das execuções. Nas demais execuções ela encontra soluções que ainda contém 1 conflito.
+Essa configuração encontra a solução ideal em aproximadamente 54% das execuções. Nas demais ela encontra soluções que ainda contém 1 conflito.
+Para visualizar a solução encontrada pelo algoritmo, basta executar o arquivo eight_queens.py
 
 
 # Alegrete
