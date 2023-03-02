@@ -1,4 +1,5 @@
 import random
+import matplotlib.pyplot as plt
 
 def evaluate(individual):
     """
@@ -146,7 +147,45 @@ def run_ga(g, n, k, m, e):
             new_population.append(individual2)
 
         population = new_population
+        
+        data_collect(population, j)
     
     return tournament(population)
 
-print(run_ga(100, 64, 16, 0.4, 2))
+def data_collect(population, j):
+    generation.append(j)
+
+    best = 1000
+    average = 0
+    worst = 0
+    for individual in population:
+        fitness = evaluate(individual)
+        if(fitness > worst):
+            worst = fitness
+        if(fitness < best):
+            best = fitness
+        average += fitness
+    average /= len(population)
+
+    best_fitness.append(best)
+    average_fitness.append(average)
+    worst_fitness.append(worst)
+
+generation = []
+best_fitness = []
+average_fitness = []
+worst_fitness = []
+
+#Run the algorithm
+run_ga(100, 64, 16, 0.4, 2)
+
+#Graph plotting
+plt.plot(generation, best_fitness, color='green',label='Best Fitness')
+plt.plot(generation, average_fitness, color='blue', label='Average Fitness')
+plt.plot(generation, worst_fitness, color='red', label='Worst Fitness')
+
+plt.title("Genetic Algorithm")
+plt.xlabel('Generation')
+plt.ylabel('Fitness')
+plt.legend(loc='upper right', fontsize='large', frameon=True, shadow=True)
+plt.show()
