@@ -149,4 +149,4 @@ def run_ga(g, n, k, m, e):
     
     return tournament(population)
 
-print(run_ga(1000,64,32,0.1,8))
+print(run_ga(100, 64, 16, 0.4, 2))
